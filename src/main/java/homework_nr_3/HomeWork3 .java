@@ -2,13 +2,9 @@ package homework_nr_3;
 
 class HomeWork3 {
     public static void main(String[] args) {
-        String decorator = "=".repeat(100);
-        String decorator1 = "=".repeat(40);
-
-        System.out.println(decorator+"\n"+decorator1+"    CASE PROBLEM    "+decorator1+"\n"+ decorator);
-
         int manth = 3;
-        switch (manth) {
+        switch (manth)
+        {
             case 1:
                 System.out.println("Jan");
                 break;
@@ -47,26 +43,5 @@ class HomeWork3 {
                 break;
 
         }
-        System.out.println(decorator+"\n"+decorator1+"   DIVIDE TO FIVE   "+decorator1+"\n"+ decorator);
-        int rez = 0;
-        for (int i = 100; i <= 1000; i++) {
-            rez = i % 5;
-            if (rez == 0) {
-                System.out.println(i);
-            }
-
-        }
-        System.out.println(decorator+"\n"+decorator1+"        SUM        "+decorator1+"\n"+ decorator);
-        int nam = 1;
-        int denam = 3;
-        double sum = 0;
-        while (denam <= 99) {
-            System.out.println(nam + "/" + denam);
-            sum += (double) nam / denam;
-            nam = nam + 2;
-            denam = denam + 2;
-        }
-        System.out.println(sum);
-
     }
 }
